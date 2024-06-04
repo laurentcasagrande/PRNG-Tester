@@ -19,6 +19,8 @@ PRNG Tester is a Python project designed to test and analyze the predictability 
 - `scikit-learn`
 - `keras`
 - `rich`
+- `matplotlib`
+- `Pillow`
 
 ### Clone the Repository
 

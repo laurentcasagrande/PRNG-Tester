@@ -26,12 +26,17 @@ PRNG Tester is a Python project designed to test and analyze the predictability 
 git clone https://github.com/your-username/prng-tester.git
 cd prng-tester
 ```
+
 ### Install Dependencies
+
 ```bash
 pip install numpy scikit-learn keras rich
 ```
-##Usage
-###Creating and Training a PRNG Model
+
+## Usage
+
+### Creating and Training a PRNG Model
+
 Define PRNG Tester Class: Extend the PRNG_tester class to define a specific PRNG or use one of the 2 Bundled ones.
 ```python
 class YourPRNG(PRNG_tester):
@@ -43,7 +48,8 @@ class YourPRNG(PRNG_tester):
         # Implement your PRNG logic here
         return random_number
 ```
-###Train and Save Model
+
+### Train and Save Model
 ```python
 from rich.console import Console
 
@@ -52,7 +58,7 @@ your_prng = YourPRNG(seed=42, n_datapoints=1000000, length_of_data=1000, console
 your_prng.create_data()
 your_prng.train()
 ```
-###Test Model
+### Test Model
 ```python
 your_prng.test()
 ```
